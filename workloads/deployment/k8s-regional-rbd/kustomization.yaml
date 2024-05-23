@@ -4,8 +4,15 @@ resources:
 patches:
   - target:
       kind: PersistentVolumeClaim
-      name: busybox-pvc
+      name: busybox-pvc-rbd
     patch: |-
       - op: replace
         path: /spec/storageClassName
         value: rook-ceph-block
+  - target:
+      kind: PersistentVolumeClaim
+      name: busybox-pvc-cephfs
+    patch: |-
+      - op: replace
+        path: /spec/storageClassName
+        value: rook-cephfs

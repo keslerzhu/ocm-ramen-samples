@@ -2,7 +2,20 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: busybox-pvc
+  name: busybox-pvc-rbc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  # Customize in your overlay.
+  storageClassName: STORAGE_CLASS_NAME
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: busybox-pvc-cephfs
 spec:
   accessModes:
     - ReadWriteOnce

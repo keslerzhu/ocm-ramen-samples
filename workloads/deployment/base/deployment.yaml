@@ -35,6 +35,21 @@ spec:
             - name: varlog
               mountPath: /var/log
       volumes:
-        - name: varlog
+        - name: busybox-pvc-rbd-1
           persistentVolumeClaim:
-            claimName: busybox-pvc
+            claimName: busybox-pvc-rbd
+        - name: busybox-pvc-rbd-2
+          persistentVolumeClaim:
+            claimName: busybox-pvc-rbd
+        - name: busybox-pvc-rbd-3
+          persistentVolumeClaim:
+            claimName: busybox-pvc-rbd
+        - name: busybox-pvc-cephfs-1
+          persistentVolumeClaim:
+            claimName: busybox-pvc-cephfs
+        - name: busybox-pvc-cephfs-2
+          persistentVolumeClaim:
+            claimName: busybox-pvc-cephfs
+        - name: busybox-pvc-cephfs-3
+          persistentVolumeClaim:
+            claimName: busybox-pvc-cephfs
