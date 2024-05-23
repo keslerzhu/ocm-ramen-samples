@@ -32,8 +32,18 @@ spec:
                   emit UPDATE
               done
           volumeMounts:
-            - name: varlog
-              mountPath: /var/log
+            - name: busybox-pvc-rbd-1
+              mountPath: /mnt/rbd-1
+            - name: busybox-pvc-rbd-2
+              mountPath: /mnt/rbd-2
+            - name: busybox-pvc-rbd-3
+              mountPath: /mnt/rbd-3
+            - name: busybox-pvc-cephfs-1
+              mountPath: /mnt/cephfs-1
+            - name: busybox-pvc-cephfs-2
+              mountPath: /mnt/cephfs-2
+            - name: busybox-pvc-cephfs-3
+              mountPath: /mnt/cephfs-3
       volumes:
         - name: busybox-pvc-rbd-1
           persistentVolumeClaim:
