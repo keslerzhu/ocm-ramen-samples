@@ -37,19 +37,19 @@ spec:
       volumes:
         - name: busybox-pvc-rbd-1
           persistentVolumeClaim:
-            claimName: busybox-pvc-rbd
+            claimName: busybox-pvc-rbd-1
         - name: busybox-pvc-rbd-2
           persistentVolumeClaim:
-            claimName: busybox-pvc-rbd
+            claimName: busybox-pvc-rbd-2
         - name: busybox-pvc-rbd-3
           persistentVolumeClaim:
-            claimName: busybox-pvc-rbd
+            claimName: busybox-pvc-rbd-3
         - name: busybox-pvc-cephfs-1
           persistentVolumeClaim:
-            claimName: busybox-pvc-cephfs
+            claimName: busybox-pvc-cephfs-1
         - name: busybox-pvc-cephfs-2
           persistentVolumeClaim:
-            claimName: busybox-pvc-cephfs
+            claimName: busybox-pvc-cephfs-2
         - name: busybox-pvc-cephfs-3
           persistentVolumeClaim:
-            claimName: busybox-pvc-cephfs
+            claimName: busybox-pvc-cephfs-3

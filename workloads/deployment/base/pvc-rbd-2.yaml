@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: busybox-pvc-cephfs
+  name: busybox-pvc-rbd-2
 spec:
   accessModes:
     - ReadWriteOnce
