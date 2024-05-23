@@ -1,6 +1,7 @@
 ---
 resources:
   - pvc.yaml
+  - pvc-cephfs.yaml
   - deployment.yaml
 commonLabels:
   appname: busybox
