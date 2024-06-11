@@ -9,6 +9,9 @@ patches:
       - op: replace
         path: /spec/storageClassName
         value: rook-ceph-block
+      - op: replace
+        path: /metadata/labels/consistency-group
+        value: cg-rbd
   - target:
       kind: PersistentVolumeClaim
       name: busybox-pvc-rbd-2
@@ -16,6 +19,9 @@ patches:
       - op: replace
         path: /spec/storageClassName
         value: rook-ceph-block
+      - op: replace
+        path: /metadata/labels/consistency-group
+        value: cg-rbd
   - target:
       kind: PersistentVolumeClaim
       name: busybox-pvc-rbd-3
@@ -23,6 +29,9 @@ patches:
       - op: replace
         path: /spec/storageClassName
         value: rook-ceph-block
+      - op: replace
+        path: /metadata/labels/consistency-group
+        value: cg-rbd
   - target:
       kind: PersistentVolumeClaim
       name: busybox-pvc-cephfs-1
@@ -30,6 +39,9 @@ patches:
       - op: replace
         path: /spec/storageClassName
         value: rook-cephfs
+      - op: replace
+        path: /metadata/labels/consistency-group
+        value: cg-cephfs
   - target:
       kind: PersistentVolumeClaim
       name: busybox-pvc-cephfs-2
@@ -37,6 +49,9 @@ patches:
       - op: replace
         path: /spec/storageClassName
         value: rook-cephfs
+      - op: replace
+        path: /metadata/labels/consistency-group
+        value: cg-cephfs
   - target:
       kind: PersistentVolumeClaim
       name: busybox-pvc-cephfs-3
@@ -44,3 +59,6 @@ patches:
       - op: replace
         path: /spec/storageClassName
         value: rook-cephfs
+      - op: replace
+        path: /metadata/labels/consistency-group
+        value: cg-cephfs
